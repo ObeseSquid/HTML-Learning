@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--!Doctype html tag tells the browser what page it is -->
+<html lang="en">
+  <!---->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--title tag specifies the name of the tab-->
+  </head>
+  <body>
+    <!--contains everything you see on the webpage-->
+    <main>
+      <!--main tag specifies the main content of the page, nothing that is repeated on other pages, such as nav bars, logos, footers-->
+      <h1>Main Title</h1>
+      <!--h1 is the most important (only use h1 once)-->
+      <section>
+        <h2>Sub Title</h2>
+        <p>Some text is <strong>bolder</strong> than others</p>
+        <!--h2 is the second most important, never skip, go from h1, h2 then to h3 and so on-->
+        <!--strong tag emphasises text maing them appear thicker, bold-->
+        <article>
+          <h2>Article</h2>
+          <p>This is a small article defined by the article tags in HTML</p>
+        </article>
+        <!--article tag defines independent content that could exist by itself, like an article in the newspaper-->
+        <p><cite>Citation</cite> by John Doe. Written in 1745.</p>
+        <!--cite tag used to cite someones work-->
+      </section>
+      <section>
+        <h2>Sub Title</h2>
+        <p><abbr title="World Wide Web">WWW</abbr></p>
+        <!--p element is for a paragraph-->
+        <!--abbr is for an abreviation or acronym using title tag attribute-->
+        <aside>
+          <p>The WWW is used to access web pages over the internet</p>
+        </aside>
+        <!--aside tag is content realted to something next to it and is usually located in a sidebar or box aside the content it is related to-->
+        <blockquote cite="#">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus
+          est, dapibus id porta at, malesuada ut mauris. Aliquam erat.
+        </blockquote>
+        <!--blockquote is for quoting from an external source -->
+      </section>
+      <section>
+        <h2>Sub Title</h2>
+        <address>130 Brickroad Stree,<br />South Yorkshire, UK</address>
+        <!--br tag is to break and start a new line-->
+        <!--address tag defines contact information-->
+        <ul>
+          <li>User mark: 60 points</li>
+          <li>User joe: 80 points</li>
+          <li>User <bdi>إيان</bdi>: 90 points</li>
+          <li>User إيان: 90 points</li>
+        </ul>
+        <!--ul tag is for an unordered list, using bulletpoints-->
+        <!--li tag is for list items-->
+        <!--bdi tag is for bi-directional isolation, used for languages where words are written in the opposite direction-->
+        <bdo dir="rtl">Hello World!</bdo><br />
+        <bdo dir="ltr">Hello World!</bdo>
+        <!--bdo tag is used to alter the direction of text sing dir attribute, rtl means right to left, ltr means left to right-->
+      </section>
+      <section>
+        <h2>Sub Title</h2>
+        <button>Button</button>
+        <!--creates a clickable button-->
+        <table>
+          <caption>
+            Caption
+          </caption>
+          <tr>
+            <th>Month</th>
+            <th>Day</th>
+          </tr>
+          <tr>
+            <td>January</td>
+            <td>Fri</td>
+          </tr>
+        </table>
+        <!--table tag creates a table-->
+        <!--caption tag is for the name of the table-->
+        <!--tr tag for table row-->
+        <!--th tag for table heading-->
+        <!--td tag for table data-->
+      </section>
+    </main>
+  </body>
+</html>

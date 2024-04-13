@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <!--!Doctype html tag tells the browser what page it is -->
+<!--is used for comments-->
 <html lang="en">
   <!---->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--meta tag is data information about the html document-->
     <title>Document</title>
     <!--title tag specifies the name of the tab-->
+    <style></style>
+    <!--style tag is used to implement internal css styling in the html document-->
   </head>
   <body>
-    <!--contains everything you see on the webpage-->
+    <header>
+      <time>10:00</time>
+      <!--time tag defines a specific time-->
+      <p>H<sub>2</sub>0</p>
+      <p>45<sup>2</sup></p>
+      <p><var>x</var> = 10</p>
+      <!--var is used to define text as a variable-->
+      <!--sub tag is used to creat subscript text, that appears lower than normal text-->
+      <!--sup tag is used to create superscript text, that appears higher than normal text-->
+      <details>
+        <summary>Details</summary>
+        <p>This is a summary of details.</p>
+      </details>
+      <!--details tag creates a drop down menu that can ble cliked to hide and show-->
+      <!--summary tag crates a heading for the details element-->
+    </header>
+    <!--header tag goes at the top of the page and defines the head of the webpage-->
+    <!--body tag contains everything you see on the webpage-->
     <main>
+      <div>div</div>
+      <span>span</span>
+      <!--div tag is a block-level container-->
+      <!--span tag is an inline container-->
       <!--main tag specifies the main content of the page, nothing that is repeated on other pages, such as nav bars, logos, footers-->
       <h1>Main Title</h1>
       <!--h1 is the most important (only use h1 once)-->
@@ -26,14 +51,25 @@
         <!--article tag defines independent content that could exist by itself, like an article in the newspaper-->
         <p><cite>Citation</cite> by John Doe. Written in 1745.</p>
         <!--cite tag used to cite someones work-->
+        <p>
+          Press <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd> to close an
+          application that has stopped working
+        </p>
+        <!--kbd tag defines keyboard output-->
       </section>
+      <!--section tag defines a section in a document0-->
       <section>
         <h2>Sub Title</h2>
+        <p>Normal size text /<small> Small size text</small></p>
+        <!--small tag makes text smaller-->
         <p><abbr title="World Wide Web">WWW</abbr></p>
         <!--p element is for a paragraph-->
         <!--abbr is for an abreviation or acronym using title tag attribute-->
         <aside>
-          <p>The WWW is used to access web pages over the internet</p>
+          <p>
+            The <mark>WWW</mark> is used to access web pages over the internet
+          </p>
+          <!--mark tag highlights text-->
         </aside>
         <!--aside tag is content realted to something next to it and is usually located in a sidebar or box aside the content it is related to-->
         <blockquote cite="#">
@@ -53,6 +89,13 @@
           <li>User <bdi>إيان</bdi>: 90 points</li>
           <li>User إيان: 90 points</li>
         </ul>
+        <ol>
+          <li>User mark: 60 points</li>
+          <li>User joe: 80 points</li>
+          <li>User <bdi>إيان</bdi>: 90 points</li>
+          <li>User إيان: 90 points</li>
+        </ol>
+        <!--ol tag is for an ordered list using numbers or alphabetical charcaters-->
         <!--ul tag is for an unordered list, using bulletpoints-->
         <!--li tag is for list items-->
         <!--bdi tag is for bi-directional isolation, used for languages where words are written in the opposite direction-->
@@ -61,10 +104,10 @@
         <!--bdo tag is used to alter the direction of text sing dir attribute, rtl means right to left, ltr means left to right-->
       </section>
       <section>
-        <h2>Sub Title</h2>
+        <h2>Heading 2</h2>
         <button>Button</button>
         <!--creates a clickable button-->
-        <table>
+        <table border="1px solid">
           <caption>
             Caption
           </caption>
@@ -82,7 +125,103 @@
         <!--tr tag for table row-->
         <!--th tag for table heading-->
         <!--td tag for table data-->
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Day</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>January</td>
+              <td>Fri</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>Tue</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>March</td>
+              <td>Wed</td>
+            </tr>
+          </tfoot>
+        </table>
+        <!--tbody tag is for the main part of the table-->
+        <!--thead tag is for the head of the table-->
+        <!--tfoot tag is for the foot of the table-->
+        <br />
+        <label for="difficulty">Level Difficulty</label>
+        <meter id="difficulty" value="2" min="0" max="10">2 out of 10</meter
+        ><br />
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100">64%</progress><br /><br />
+        <!--progress tag used to show progress of a task, used with javascript to animate accurately-->
+        <!--label tag is for accessiblity, the for in label must be the same id for its related element-->
+        <!--meter tag is for showing a measurement or gauge, not a progress bar-->
+      </section>
+      <section>
+        <h2>Heading 2</h2>
+        <p>The HTML <code>button</code> tag defines a clickable button.</p>
+        <!--code tag refers to a piece of computer code-->
+        <dl>
+          <dt>Red</dt>
+          <dd>The <del>color</del><ins>colour</ins> of blood</dd>
+          <dt>Blue</dt>
+          <dd>The colour of the sky</dd>
+          <dt>Green</dt>
+          <dd>The colour of the grass</dd>
+        </dl>
+        <!--dl tag is for a description list-->
+        <!--dt tag is for description name/term-->
+        <!--dd tag is for describing the name in the dt tag-->
+        <!--del tag is for crossing out words that have been removed and replaced-->
+        <!--ins tag is for inserting a word after the del tag-->
+        <q>This is a small quotation.</q>
+        <!--q tag used for small quotes-->
+        <p><s>This text is all wrong!</s></p>
+        <!--s tag is for crossing out text that is wrong or outdated-->
+        <samp>Syntax Error!</samp>
+        <!--samp tag defines text output from a computer program / terminal-->
+      </section>
+      <section>
+        <h2>Sub Heading</h2>
+        <script>
+          document.write("Hello World!");
+        </script>
+        <!--script tag is for writing javascript inside the html document-->
+        <noscript>Your browser does not support JavaScript!</noscript>
+        <!--noscript tag is used for showing alternative text if scripts are disabled on users browser-->
+        <br />
+        <label for="fruit">Pick a fruit:</label>
+        <select name="fruit" id="fruit">
+          <optgroup label="Small Fruit">
+            <option value="grape">Grape</option>
+            <option value="plum">Plum</option>
+            <option value="strawberry">Strawberry</option>
+          </optgroup>
+          <optgroup label="Large Fruit">
+            <option value="melon">Melon</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="banana">Banana</option>
+          </optgroup>
+        </select>
+        <!--select tag is for a dropdown list-->
+        <!--optgroup tag groups related options together-->
+        <!--option tag is used to list each option in the dropdown-->
+        <br /><br />
+        <pre>
+a b    c  d 
+           e     f g    h   i
+             j k  l mn       o p </pre
+        >
+        <!--pre tag is for preformatted text, this tag doesnt ignore spaces or line breaks-->
       </section>
     </main>
+    <footer></footer>
+    <!--footer tag goes at the bottom and defines the foot of the page-->
   </body>
 </html>

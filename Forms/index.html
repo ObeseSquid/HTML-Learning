@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Forms</h1>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <h2>Text Form</h2>
+        <br />
+        <form>
+          <label for="firstname">First Name:</label><br />
+          <input type="text" id="firstname" name="firstname" /><br />
+          <label for="lastname">Last Name:</label><br />
+          <input type="text" id="lastname" name="lastname" />
+        </form>
+        <br />
+        <hr />
+        <!--form tag is a container for any kind of form-->
+        <!--input tag is for specifiying the type of input type you want, text, radio, checkbox, etc-->
+        <!--type="text" attribute makes the input format as a textbox-->
+        <!--name attribute is required to send the information in the form-->
+        <!--label tag must have the same value in the for attribute with the corresponding input id attribute -->
+      </section>
+      <section>
+        <h2>Radio Form</h2>
+        <br />
+        <form>
+          <input type="radio" id="1" name="numbers" value="1" />
+          <label for="1">1</label><br />
+          <input type="radio" id="2" name="numbers" value="2" />
+          <label for="2">2</label><br />
+          <input type="radio" id="3" name="numbers" value="3" />
+          <label for="3">3</label>
+        </form>
+        <br />
+        <hr />
+        <!--type="radio" atribute create radial buttons that allow only 1 option-->
+        <!--value attribute specifies the value of the element -->
+      </section>
+      <section>
+        <h2>Checkbox Form</h2>
+        <br />
+        <form>
+          <input type="checkbox" id="language1" name="language1" value="HTML" />
+          <label for="language1">HTML</label><br />
+          <input type="checkbox" id="language2" name="language2" value="CSS" />
+          <label for="language2">CSS</label><br />
+          <input
+            type="checkbox"
+            id="language3"
+            name="language3"
+            value="JavaScript"
+          />
+          <label for="langauge3">JavaScript</label>
+        </form>
+        <br />
+        <hr />
+        <!--type="checkbox" attribute creates checkboxes that can be selected or unselected-->
+      </section>
+      <section>
+        <h2>Submit Form</h2>
+        <br />
+        <form action="#">
+          <input type="submit" value="submit" />
+        </form>
+        <br />
+        <hr />
+        <!--type="submit" attribute will create a submit button to submit the data in the form to be processed-->
+        <!--the action attribute contains the file that will process the input information after being submitted-->
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

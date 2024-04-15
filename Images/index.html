@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <header><h1>Images</h1></header>
+    <hr />
+
+    <main>
+      <section>
+        <h3>Image</h3>
+        <img src="887-200x300.jpg" alt="Face of a flat" />
+        <a href="https://www.wikipedia.org">
+          <img
+            src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg"
+            alt="wikipedia logo"
+            style="height: 100px"
+        /></a>
+        <!--img tag nested inside an anchor tag will turn the image into a link-->
+        <!--src attributes can contain both downloaded images and full urls of online images-->
+        <!--img
+          tag
+          is
+          used
+          to
+          display
+          an
+          image-->
+        <!--src attribute is for the source/url of the image-->
+        <!--alt attribute is what is displayed when the image doesnt load / what is read on screen reader-->
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Image with styling</h3>
+        <img src="21-200x300.jpg" alt="White Shoes" style="height: 100px" />
+        <!--style attribute allows for css styling-->
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Animated Images</h3>
+        <br />
+        <img
+          src="cube.gif"
+          alt="spinning cube"
+          style="float: left; height: 100px"
+        />
+        <br />
+        <img
+          src="cube.gif"
+          alt="spinning cube"
+          style="float: right; height: 100px"
+        />
+        <br />
+        <!--using the float attribute the picture can be moved to the right or left side of the screen-->
+        <p style="text-align: center">In the middle</p>
+        <br />
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Image Map</h3>
+        <img
+          src="workplace.jpg"
+          alt="Workplace"
+          usemap="#workmap"
+          width="400"
+          height="379"
+        />
+
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Computer"
+            href="https://wikipedia.org/wiki/Computer"
+          />
+        </map>
+        <!--map tag defines a clikable area on an image-->
+        <!--usemap attribute joins the clickable area to the image-->
+        <!--area tag defines the clickable area-->
+        <!--rect shape stands for rectangle-->
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Background Image</h3>
+        <p style="background-image: url('geometric.webp')">
+          freestar freestar Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Morbi dictum venenatis neque, eu consequat lectus aliquam nec.
+          Vivamus consectetur purus quis orci egestas, a laoreet nibh commodo.
+          Proin fermentum nibh purus, sed auctor ligula pulvinar id. Vivamus
+          hendrerit, nisi et tristique sodales, velit risus vehicula metus, sed
+          efficitur sem velit eu tellus. Aliquam vel libero lorem. Curabitur
+          vulputate turpis vel mi convallis, in accumsan odio finibus. Mauris
+          consequat ultrices dignissim. Phasellus euismod ullamcorper urna, sit
+          amet imperdiet felis pharetra ut. Praesent nec accumsan felis, a
+          commodo massa. Aenean ullamcorper facilisis turpis eu tempor. Sed a
+          urna maximus, feugiat urna vitae, interdum nulla. Nullam eu blandit
+          nunc, in tincidunt est. Nam vitae leo ut odio lacinia dictum.
+          Curabitur quis molestie massa, eget pellentesque nisl. Vestibulum
+          egestas fringilla urna, nec aliquet purus elementum vitae.
+          Pellentesque pretium porttitor enim, eu condimentum purus. Vivamus
+          sagittis est nibh, et viverra enim commodo et. Morbi id ullamcorper
+          ex. Donec feugiat nunc at mauris ultrices accumsan. Donec in blandit
+          nunc, a pulvinar nibh. Quisque consectetur metus nulla, ac
+          sollicitudin urna finibus a. Nullam velit eros, bibendum et velit vel,
+          sagittis auctor leo. Donec facilisis elit a tincidunt ullamcorper. Ut
+          elementum arcu quis erat volutpat accumsan. Ut fermentum tortor nec
+          consequat eleifend. Nam vel pretium sapien, in blandit lectus. Mauris
+          faucibus urna ut egestas blandit. Aenean dignissim scelerisque leo.
+          Sed ornare leo at justo cursus molestie. Integer nulla dolor, rutrum
+          id blandit ut, vulputate quis nibh. Donec ultricies sem diam, nec
+          auctor dui maximus vel. Donec enim arcu, blandit varius commodo nec,
+          porttitor id lacus. Suspendisse ut arcu et est auctor rutrum in sed
+          ex.
+        </p>
+        <!--background image attribute adds the image to the background behind everything else in the tag-->
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

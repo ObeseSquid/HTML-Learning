@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos</title>
+  </head>
+  <body>
+    <header><h1>Videos</h1></header>
+    <hr />
+
+    <main>
+      <section>
+        <h3>Video Controls</h3>
+        <video width="300px" controls>
+          <source src="samplevideo.mp4" type="video/mp4" />
+        </video>
+        <!--video tag is used to show the video-->
+        <!--source tag is the video file to be shown, multiple can be added inside the video tag-->
+        <!--controls attribute adds the ability to pause, fullscreen, alter volume, fast forward, etc-->
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Video Muted</h3>
+        <video width="300px" controls muted>
+          <source src="samplevideo.mp4" type="video/mp4" />
+        </video>
+        <!--muted attribute mutes the video by default-->
+      </section>
+      <br />
+      <hr />
+      <section>
+        <h3>Video Autoplay (muted)</h3>
+        <video width="300px" controls autoplay muted>
+          <source src="samplevideo.mp4" type="video/mp4" />
+        </video>
+        <!--muted attribute mutes the video by default-->
+        <!--autoplay attribute plays the video immediately after accessing the page-->
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
